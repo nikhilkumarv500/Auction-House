@@ -1,0 +1,204 @@
+.OrangeSharderBackground-shader-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.create-bid-page-outer_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome / Safari */
+  }
+}
+
+.create-bid-page-main-container {
+  width: 100%;
+  max-width: 1020px;
+  padding: 0 20px;
+  // border: 5px white solid;
+
+  .create-bid-page-inner-body-wrapper {
+    padding-top: 6rem;
+    justify-content: space-between;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .electric-border {
+      margin: 0 5rem;
+      height: fit-content;
+    }
+
+    .create-bid-page-inner-body-page-title-section {
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-between;
+
+      .create-bid-page-inner-body-page-title-text {
+        color: black;
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0;
+
+        span {
+          color: red;
+        }
+      }
+
+      .create-bid-page-inner-body-page-wallet-balance-section {
+        background-color: rgb(0, 0, 0);
+        padding: 0.5rem 1rem;
+        height: fit-content;
+        border-radius: 10px;
+        display: flex;
+        gap: 0.5rem;
+
+        .part1 {
+          font-weight: 700;
+          font-size: 17px;
+          margin: 0;
+
+          background: linear-gradient(
+            135deg,
+            #f6e27a 0%,
+            #e2bc3f 25%,
+            #f6e27a 50%,
+            #ffbc19 75%,
+            #f6e27a 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+        }
+
+        .part2 {
+          color: white;
+          font-weight: 600;
+          font-size: 17px;
+          margin: 0;
+        }
+      }
+    }
+
+    .create-bid-page-details-form-container {
+      // margin: 0 5rem;
+      height: fit-content;
+      border: 3px solid white;
+      border-radius: 10px;
+      padding: 2rem;
+
+      &-title {
+        color: black;
+        font-size: 25px;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      &-money-required-text {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+      }
+
+      &-item-name-container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        &-label {
+          font-weight: 500;
+          margin: 0;
+        }
+
+        &-value {
+          width: 16rem;
+        }
+      }
+
+      &-item-description-container {
+        display: flex;
+        gap: 1rem;
+        align-items: start;
+        margin-bottom: 2rem;
+
+        &-label {
+          font-weight: 500;
+          margin: 0;
+        }
+
+        &-value {
+          width: 16rem;
+        }
+      }
+
+      &-item-price-container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        &-label {
+          font-weight: 500;
+          margin: 0;
+        }
+
+        &-value {
+          width: 16rem;
+        }
+      }
+
+      &-item-endDate-container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &-label {
+          font-weight: 500;
+          margin: 0;
+        }
+
+        &-value {
+          width: 16rem;
+        }
+      }
+
+      &-item-imageUpload-container {
+        display: flex;
+        gap: 1rem;
+        align-items: start;
+        margin-bottom: 2rem;
+
+        &-label {
+          font-weight: 500;
+          margin: 1rem 0 0;
+        }
+
+        &-value {
+          width: 16rem;
+        }
+      }
+
+      &-item-create-bid-button-container {
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+}

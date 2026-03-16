@@ -1,0 +1,166 @@
+Backend
+
+
+1.)do
+./mvnw clean package -DskipTests
+if it gives error for no env varialbes found
+
+2.)set env variables in command line
+powershell =>
+$env:SPRING_APPLICATION_NAME=""
+
+windows (command prompt)
+set SPRING_APPLICATION_NAME=""
+
+3.) again do step 1
+
+4.) create docker file
+
+5.) in IntelliJ powershell do
+docker build -t demo-deployment .
+
+6.) shld tag image with docker hub username, do in powershell
+docker tag demo-deployment decode007/demo-deployment:latest
+
+7.) do
+docker push decode007/demo-deployment:latest
+
+8.) then in render service
+choose a new webservice
+then paste link for existing image
+url = docker.io/{imageurl}:latest
+
+--------------------------------
+--------------------------------
+--------------------------------
+front end
+in root directory do
+npm run build
+
+after deploy : https://nikhilkumarv-auction-house.netlify.app
+
+//update env variables after deploy
+VITE_NIKHIL_KUMAR_V_PORTFOLIO_URL=https://nikhilkumarv-portfolio.vercel.app
+VITE_GATEWAY_API_BE_URL=https://auction-house-apigateway.onrender.com
+VITE_MAINSERVICE_API_BE_URL=https://auction-house-mainservice.onrender.com
+VITE_SERVICE_REGISTORY_API_BE_URL=https://auction-house-serviceregistory.onrender.com
+VITE_INVENTORY_SERVICE_API_BE_URL=https://auction-house-inventoryservice.onrender.com
+
+----------------
+----------------
+----------------
+
+doing service registory
+
+./mvnw clean package -DskipTests
+
+//the create docker file (Dockerfile)
+
+docker build -t auction-house-serviceregistory .
+
+docker tag auction-house-serviceregistory nikhilkumarv/auction-house-serviceregistory:latest
+
+docker push nikhilkumarv/auction-house-serviceregistory:latest
+
+//doing render push - done
+docker.io/nikhilkumarv/auction-house-serviceregistory:latest
+
+//after render deploy
+https://auction-house-serviceregistory.onrender.com
+
+//update render environment
+EUREKA_HOSTNAME: auction-house-serviceregistory.onrender.com
+FRONTEND_ALLOWED_ORIGINS: https://nikhilkumarv-auction-house.netlify.app
+
+----------------
+----------------
+----------------
+
+doing api gateway
+
+./mvnw clean package -DskipTests
+
+//the create docker file (Dockerfile)
+
+docker build -t auction-house-apigateway .
+
+docker tag auction-house-apigateway nikhilkumarv/auction-house-apigateway:latest
+
+docker push nikhilkumarv/auction-house-apigateway:latest
+
+//doing render push - done
+docker.io/nikhilkumarv/auction-house-apigateway:latest
+
+//update render environment
+DB_URL: 
+DB_USERNAME:
+DB_PASSWORD:
+EUREKA_SERVER: https://auction-house-serviceregistory.onrender.com/eureka/
+FRONTEND_ALLOWED_ORIGINS: https://nikhilkumarv-auction-house.netlify.app
+
+//after render deploy
+https://auction-house-apigateway.onrender.com
+
+----------------
+----------------
+----------------
+
+doing mainservice
+
+./mvnw clean package -DskipTests
+
+//the create docker file (Dockerfile)
+
+docker build -t auction-house-mainservice .
+
+docker tag auction-house-mainservice nikhilkumarv/auction-house-mainservice:latest
+
+docker push nikhilkumarv/auction-house-mainservice:latest
+
+//doing render push - done
+docker.io/nikhilkumarv/auction-house-mainservice:latest
+
+//update render environment
+DB_URL: 
+DB_USERNAME:
+DB_PASSWORD:
+EUREKA_SERVER: https://auction-house-serviceregistory.onrender.com/eureka/
+REDIS_URL=
+FRONTEND_ALLOWED_ORIGINS: ?
+
+//after render deploy
+https://auction-house-mainservice.onrender.com
+
+
+----------------
+----------------
+----------------
+
+doing inventory service
+
+./mvnw clean package -DskipTests
+
+//the create docker file (Dockerfile)
+
+docker build -t auction-house-inventoryservice .
+
+docker tag auction-house-inventoryservice nikhilkumarv/auction-house-inventoryservice:latest
+
+docker push nikhilkumarv/auction-house-inventoryservice:latest
+
+//doing render push - done
+docker.io/nikhilkumarv/auction-house-inventoryservice:latest
+
+//update render environment
+DB_URL: 
+DB_USERNAME:
+DB_PASSWORD:
+EUREKA_SERVER: https://auction-house-serviceregistory.onrender.com
+REDIS_URL=
+FRONTEND_ALLOWED_ORIGINS: ?
+
+//after render deploy
+https://auction-house-inventoryservice.onrender.com
+
+
+

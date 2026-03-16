@@ -1,0 +1,17 @@
+.auction-date-picker-component-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 260px;
+}
+
+.auction-date-picker-component-input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.auction-date-picker-component-error {
+  color: red;
+  font-size: 12px;
+}

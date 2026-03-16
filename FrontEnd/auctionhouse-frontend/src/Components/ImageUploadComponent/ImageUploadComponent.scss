@@ -1,0 +1,68 @@
+.image-upload-component-upload-wrapper {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tooltip */
+.image-upload-component-tooltip {
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+/* Upload Card */
+.image-upload-component-upload-card {
+  height: 180px;
+  width: 180px;
+  border-radius: 14px;
+  border: 2px dashed #b08cff;
+  background: linear-gradient(135deg, #6a0dad, #ff4da6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  overflow: hidden;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 15px rgba(255, 255, 255, 0.12);
+}
+
+.image-upload-component-upload-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.45),
+    inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Placeholder */
+.image-upload-component-upload-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.image-upload-component-upload-icon {
+  font-size: 34px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Preview image */
+.image-upload-component-preview-img {
+  background-repeat: no-repeat;
+  width: stretch;
+  height: stretch;
+}
+
+.image-upload-component-image-remove-button {
+  font-weight: 700;
+  font-size: 13px;
+  width: 180px;
+  border-radius: 11px;
+  --border-radius: 10px;
+  margin-top: 1rem;
+}

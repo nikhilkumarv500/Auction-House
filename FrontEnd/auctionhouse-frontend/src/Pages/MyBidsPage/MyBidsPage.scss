@@ -1,0 +1,135 @@
+.PurpleShaderBackground-shader-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.my-bid-page-outer_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome / Safari */
+  }
+}
+
+.my-bid-page-main-container {
+  width: 100%;
+  max-width: 1020px;
+  padding: 0 20px;
+  // border: 5px white solid;
+
+  .my-bid-page-inner-body-wrapper {
+    padding-top: 6rem;
+    justify-content: space-between;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .my-bid-page-inner-body-contents-section {
+      .my-bid-page-inner-body-wrapper-page-heading {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+
+        span {
+          color: red;
+        }
+      }
+
+      .my-bid-page-mode-decide-button {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .my-bid-page-bid-list-display-outer-wrapper {
+        width: 100%;
+        padding: 0 2rem;
+        margin-bottom: 4rem;
+
+        .my-bid-page-bid-list-individual-componenet-lists {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        .my-bid-page-bid-list-empty-message-wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          p {
+            color: white;
+            font-size: 2rem;
+            font-weight: 600;
+            width: fit-content;
+            margin: 0;
+          }
+        }
+      }
+
+      .my-bid-page-pagination-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        border: 3px solid black;
+
+        .pagination-size {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+
+        .pagination-buttons {
+          display: flex;
+          align-items: center;
+        }
+
+        .form-select {
+          background-color: black;
+          color: white;
+        }
+
+        span,
+        div,
+        p {
+          color: rgb(1, 1, 1);
+        }
+      }
+
+      .my-bid-page-cosmic-search-bar-outer-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+      }
+    }
+
+    .general-footer-outer-container
+      .general-footer-outer-wrapper
+      .general-footer-inner-wrapper
+      .general-footer-inner-left-section-app-name {
+      color: white;
+    }
+  }
+}

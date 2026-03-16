@@ -1,0 +1,40 @@
+.general-footer-outer-container {
+  height: 10rem;
+  margin-top: auto;
+  display: flex;
+  align-items: end;
+
+  .general-footer-outer-wrapper {
+    width: 100%;
+    height: fit-content;
+    //   background-color: white;
+
+    .general-footer-inner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem 0;
+      border-top: 3px solid #ffffff8a;
+
+      .general-footer-inner-left-section {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+
+        &-app-logo {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        &-app-name {
+          color: rgb(0, 0, 0);
+          font-weight: 700;
+          margin: 0;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

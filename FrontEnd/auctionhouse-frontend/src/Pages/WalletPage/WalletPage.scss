@@ -1,0 +1,150 @@
+.YellowShaderBackground-shader-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.wallet-page-outer_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome / Safari */
+  }
+}
+
+.wallet-page-main-container {
+  width: 100%;
+  max-width: 1020px;
+  padding: 0 20px;
+
+  .wallet-page-inner-body-wrapper {
+    padding-top: 6rem;
+    justify-content: space-between;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .wallet-page-inner-body-contents-section {
+      .wallet-page-top-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+
+        .wallet-page-heading-text {
+          padding: 0;
+          margin: 0;
+          color: black;
+          font-size: 3rem;
+          font-weight: 800;
+          margin-bottom: 1rem;
+
+          span {
+            color: red;
+          }
+        }
+
+        .wallet-page-top-right-money-balance-section {
+          background-color: rgb(0, 0, 0);
+          padding: 0.5rem 1rem;
+          height: fit-content;
+          border-radius: 10px;
+          display: flex;
+          gap: 0.5rem;
+
+          .part1 {
+            font-weight: 700;
+            font-size: 17px;
+            margin: 0;
+
+            background: linear-gradient(
+              135deg,
+              #f6e27a 0%,
+              #e2bc3f 25%,
+              #f6e27a 50%,
+              #ffbc19 75%,
+              #f6e27a 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+          }
+
+          .part2 {
+            color: white;
+            font-weight: 600;
+            font-size: 17px;
+            margin: 0;
+          }
+        }
+      }
+
+      .wallet-page-middle-section {
+        display: flex;
+        justify-content: center;
+
+        .wallet-page-add-money-card {
+          background: rgba(0, 0, 0, 0.5);
+          backdrop-filter: blur(12px);
+          padding: 2rem;
+          color: white;
+          width: 30rem;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          .add-money-card-title-text {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+          }
+
+          .add-money-card-title-limit-caution-text {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .add-money-card-money-entry-form {
+            display: flex;
+
+            .add-money-card-money-entry-form-title {
+              width: 11rem;
+              display: flex;
+              align-items: center;
+              margin: 0;
+            }
+          }
+
+          .add-money-card-submit-add-money-button-section {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        .wallet-page-horizontal-line {
+          width: 100%;
+          border: 1px solid #ffffff87;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,332 @@
+$user-svg: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="%23ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z" fill="%23ffffff"></path><path d="M14 12C14 10.3431 12.6569 9 11 9H5C3.34315 9 2 10.3431 2 12V15H14V12Z" fill="%23ffffff"></path></g></svg>');
+$medal-svg: url('data:image/svg+xml,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="%23ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C15.866 16 19 12.866 19 9C19 5.13401 15.866 2 12 2C8.13401 2 5 5.13401 5 9C5 12.866 8.13401 16 12 16ZM12 6C11.7159 6 11.5259 6.34084 11.1459 7.02251L11.0476 7.19887C10.9397 7.39258 10.8857 7.48944 10.8015 7.55334C10.7173 7.61725 10.6125 7.64097 10.4028 7.68841L10.2119 7.73161C9.47396 7.89857 9.10501 7.98205 9.01723 8.26432C8.92945 8.54659 9.18097 8.84072 9.68403 9.42898L9.81418 9.58117C9.95713 9.74833 10.0286 9.83191 10.0608 9.93531C10.0929 10.0387 10.0821 10.1502 10.0605 10.3733L10.0408 10.5763C9.96476 11.3612 9.92674 11.7536 10.1565 11.9281C10.3864 12.1025 10.7318 11.9435 11.4227 11.6254L11.6014 11.5431C11.7978 11.4527 11.8959 11.4075 12 11.4075C12.1041 11.4075 12.2022 11.4527 12.3986 11.5431L12.5773 11.6254C13.2682 11.9435 13.6136 12.1025 13.8435 11.9281C14.0733 11.7536 14.0352 11.3612 13.9592 10.5763L13.9395 10.3733C13.9179 10.1502 13.9071 10.0387 13.9392 9.93531C13.9714 9.83191 14.0429 9.74833 14.1858 9.58118L14.316 9.42898C14.819 8.84072 15.0706 8.54659 14.9828 8.26432C14.895 7.98205 14.526 7.89857 13.7881 7.73161L13.5972 7.68841C13.3875 7.64097 13.2827 7.61725 13.1985 7.55334C13.1143 7.48944 13.0603 7.39258 12.9524 7.19887L12.8541 7.02251C12.4741 6.34084 12.2841 6 12 6Z" fill="%23ffffff"></path><path d="M7.09301 15.9414L6.71424 17.323C6.0859 19.6148 5.77173 20.7607 6.19097 21.3881C6.3379 21.6079 6.535 21.7844 6.76372 21.9008C7.41634 22.2331 8.424 21.7081 10.4393 20.658C11.1099 20.3086 11.4452 20.1339 11.8014 20.0959C11.9335 20.0818 12.0665 20.0818 12.1986 20.0959C12.5548 20.1339 12.8901 20.3086 13.5607 20.658C15.576 21.7081 16.5837 22.2331 17.2363 21.9008C17.465 21.7844 17.6621 21.6079 17.809 21.3881C18.2283 20.7607 17.9141 19.6148 17.2858 17.323L16.907 15.9414C15.5208 16.9231 13.8278 17.5 12 17.5C10.1722 17.5 8.47915 16.9231 7.09301 15.9414Z" fill="%23ffffff"></path></g></svg>');
+$calender-svg: url('data:image/svg+xml,<svg fill="%23ffffff" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" stroke="%23ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M960 95.888l-256.224.001V32.113c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76h-256v-63.76c0-17.68-14.32-32-32-32s-32 14.32-32 32v63.76H64c-35.344 0-64 28.656-64 64v800c0 35.343 28.656 64 64 64h896c35.344 0 64-28.657 64-64v-800c0-35.329-28.656-63.985-64-63.985zm0 863.985H64v-800h255.776v32.24c0 17.679 14.32 32 32 32s32-14.321 32-32v-32.224h256v32.24c0 17.68 14.32 32 32 32s32-14.32 32-32v-32.24H960v799.984zM736 511.888h64c17.664 0 32-14.336 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32zm0 255.984h64c17.664 0 32-14.32 32-32v-64c0-17.664-14.336-32-32-32h-64c-17.664 0-32 14.336-32 32v64c0 17.696 14.336 32 32 32zm-192-128h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32zm0-255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm-256 0h-64c-17.664 0-32 14.336-32 32v64c0 17.664 14.336 32 32 32h64c17.664 0 32-14.336 32-32v-64c0-17.68-14.336-32-32-32zm0 255.984h-64c-17.664 0-32 14.336-32 32v64c0 17.68 14.336 32 32 32h64c17.664 0 32-14.32 32-32v-64c0-17.648-14.336-32-32-32z"></path></g></svg>');
+$clock-svg: url('data:image/svg+xml,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="%23ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12 7V12L14.5 13.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>');
+
+.individual-bid-items-card-border {
+  //   width: 190px;
+  //   height: 254px;
+  background: #07182e;
+  padding: 4px;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.35),
+    0 1px 20px rgba(0, 0, 0, 0.25),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow:
+      0 25px 55px rgba(0, 0, 0, 0.45),
+      0 5px 20px rgba(0, 0, 0, 0.3),
+      inset 0 0 15px rgba(255, 255, 255, 0.15);
+  }
+
+  .card-spotlight {
+    // background-color: #bfedff;
+    background: linear-gradient(135deg, #a82fff 0%, #ff52a9 100%);
+    z-index: 2;
+    border-radius: 20px;
+    border: 0px;
+    padding: 0;
+  }
+
+  .individual-bid-items-card-inner-wrapper {
+    padding: 1rem;
+
+    .individual-bid-items-card-inner-upper-section {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      &-image-section {
+        width: 12rem;
+        height: 12rem;
+        overflow: hidden;
+        border-radius: 20px;
+        border: 2px solid;
+
+        img {
+          width: stretch;
+          height: stretch;
+        }
+      }
+
+      &-middle-section {
+        width: calc(100% - 14rem);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+        &-top-container {
+          .individual-bid-items-card-inner-upper-section-middle-section-item-name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+            width: 27rem;
+          }
+
+          .individual-bid-items-card-inner-upper-section-middle-section-item-description {
+            color: white;
+            font-size: 18px;
+            margin: 0 0 0.5rem 0;
+            width: 27rem;
+          }
+
+          .individual-bid-items-card-inner-upper-section-middle-section-item-owner-name-old-bid-page {
+            color: white;
+            margin-bottom: 0.5rem;
+            padding-left: 21px;
+            position: relative;
+
+            &::before {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-repeat: no-repeat;
+              width: 17px;
+              height: 17px;
+              position: absolute;
+              top: 3px;
+              left: 0;
+              content: "";
+              background-image: $user-svg;
+            }
+          }
+
+          .individual-bid-items-card-inner-upper-section-middle-section-item-sold-to-name-old-bid-page {
+            color: white;
+
+            padding-left: 21px;
+            position: relative;
+
+            &::before {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-repeat: no-repeat;
+              width: 17px;
+              height: 17px;
+              position: absolute;
+              top: 3px;
+              left: 0;
+              content: "";
+              background-image: $medal-svg;
+            }
+          }
+        }
+
+        &-bottom-container {
+          gap: 0.5rem;
+          display: flex;
+
+          &-left-section {
+            font-size: 13px;
+            color: white;
+            margin: 0;
+            padding-left: 21px;
+            position: relative;
+
+            &::before {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-repeat: no-repeat;
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              top: 2px;
+              left: 0;
+              content: "";
+              background-image: $calender-svg;
+            }
+          }
+
+          &-right-section {
+            font-size: 13px;
+            color: white;
+            margin: 0;
+
+            padding-left: 21px;
+            position: relative;
+
+            &::before {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-repeat: no-repeat;
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              top: 2px;
+              left: 0;
+              content: "";
+              background-image: $clock-svg;
+            }
+          }
+
+          &-horizontal-divider {
+            border: 1px solid #ffffff61;
+            border-radius: 20px;
+          }
+        }
+
+        &-end-timer {
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          display: flex;
+          gap: 0.5rem;
+          background: white;
+          padding: 2px 5px;
+          border-radius: 5px;
+
+          span {
+            font-weight: 600;
+            color: black;
+          }
+        }
+
+        &-bid-id {
+          position: absolute;
+          right: 0;
+          top: 3rem;
+          background: white;
+          padding: 2px 5px;
+          border-radius: 5px;
+
+          p {
+            margin: 0;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    .individual-bid-items-card-inner-lower-section {
+      display: flex;
+      justify-content: space-between;
+
+      &-left-container-bid-page {
+        display: flex;
+        gap: 0.5rem;
+        align-items: end;
+
+        &-highest-bid {
+          margin: 0;
+          color: white;
+        }
+
+        &-starting-price {
+          margin: 0;
+          color: white;
+        }
+
+        .vertical-line {
+          border: 1px solid #ffffff61;
+          border-radius: 20px;
+          height: 100%;
+        }
+
+        .big-text {
+          font-size: 23px;
+          font-weight: 700;
+        }
+      }
+
+      &-right-container {
+        &-button {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+          font-weight: 550;
+        }
+      }
+    }
+  }
+}
+
+.individual-bid-items-card-border h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.individual-bid-items-card-border::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 1500px;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+  z-index: 1;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.individual-bid-items-card-border::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}
+/* .individual-bid-items-card-border:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+.live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: red;
+}
+
+.live-dot-stop {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.gold-text {
+  background: linear-gradient(
+    135deg,
+    #f6e27a 0%,
+    #e2bc3f 25%,
+    #f6e27a 50%,
+    #ffbc19 75%,
+    #f6e27a 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

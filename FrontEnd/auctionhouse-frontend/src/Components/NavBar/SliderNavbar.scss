@@ -1,0 +1,81 @@
+.slider-navbar-outer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // z-index: -99;
+
+  .slider-navbar-main-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    // z-index: -99;
+  }
+}
+
+.slider-navbar-welcome-user-container {
+  width: fit-content;
+  display: flex;
+  transition: all ease 0.3s;
+  display: flex;
+  // gap: 0.5rem;
+
+  .slider-navbar-welcome-user-text,
+  span {
+    font-size: 1rem;
+    color: white;
+  }
+}
+
+.slider-navbar-inner-wrapper {
+  background: rgb(0 0 0 / 50%);
+  width: 100%;
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  justify-content: space-between;
+  display: flex;
+
+  position: absolute;
+  top: 1rem;
+  z-index: 2;
+  padding-left: 2rem;
+  align-items: center;
+}
+
+.slider-navbar-right-side {
+  display: flex;
+  margin-right: 2rem;
+  align-items: center;
+
+  .slider-navbar {
+    display: flex;
+    gap: 8px;
+    padding: 6px;
+    width: fit-content;
+  }
+
+  .nav-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .slider-pill {
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: -1;
+  }
+
+  .slider-navbar-right-side-logout-button {
+    height: 38px;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
